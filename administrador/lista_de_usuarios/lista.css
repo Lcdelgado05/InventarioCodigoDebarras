@@ -1,0 +1,48 @@
+body {
+    background-color: #fff; /* Fondo blanco */
+    color: #6e45e2; /* Texto morado */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #88d3ce; /* Fondo azul */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .user-info {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .sidebar {
+    flex-basis: 30%;
+    background-color: #f0f0f0; /* Fondo gris para la barra lateral */
+    padding: 10px;
+  }
+  
+  /* Estilos para la tabla de usuarios */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Fondo gris claro para encabezados */
+  }
+  

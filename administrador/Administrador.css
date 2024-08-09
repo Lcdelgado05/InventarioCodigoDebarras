@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    background-color: #dbdbdb;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.btn-1, .btn-2 {
+    margin: 10px;
+    width: 300px; /* Nueva anchura del botón */
+    height: 230px; /* Nueva altura del botón */
+}
+
+.btn-1 a, .btn-2 a {
+    display: block;
+    width: 100%; /* El enlace ocupa todo el espacio del botón */
+    height: 100%; /* El enlace ocupa todo el espacio del botón */
+}
+
+.btn-1 img, .btn-2 img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del enlace */
+    height: 100%; /* La imagen ocupa el 100% del alto del enlace */
+}
+
+.btn-1:hover, .btn-2:hover {
+    border: 3px solid #88d3ce;
+}
+
+.btn-1:active, .btn-2:active {
+    box-shadow: 4px 4px 12px #6e45e2, -4px -4px 12px #6e45e2;
+}

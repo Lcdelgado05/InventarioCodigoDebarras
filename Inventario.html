@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inventario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Gestion de Inventario con Imágenes y Codigo de Barras</title>
+</head>
+<body>
+    <header>
+        <h1>INVENTARIO</h1>
+    </header>
+
+    <section id="product-list">
+        <ul id="list-products"></ul>
+    </section>
+
+    <section id="add-product">
+        <h2>Agregar Producto</h2>
+        <form id="main-form">
+            <div class="form-group">
+                <label for="nombreProducto">
+                  <input placeholder="Nombre del producto"   type="text" id="nombreProducto" name="nombreProducto" required />
+                </label>
+                  </div>
+                
+
+            <div class="form-group">
+                <label for="cantidadProducto">
+                  <input placeholder="Cantidad de producto"   type="number" id="cantidadProducto" name="cantidadProducto" />
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="precioProducto">
+                <input placeholder="Precio unitario"  type="number" id="precioProducto" name="precioProducto" required />
+            </label>
+            </div>
+
+            <div class="form-group">
+                <label for="imagenProducto">
+                <input placeholder="Imagen del producto"  type="file" id="imagenProducto" name="imagenProducto" accept="image/*" required />
+            </label>
+            </div>
+
+            <button type="submit" id="agregarProducto">Agregar Producto</button>
+        </form>
+    </section>
+
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

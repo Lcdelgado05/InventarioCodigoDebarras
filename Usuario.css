@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    background: linear-gradient(to right, #6e45e2, #88d3ce);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+
+}
+
+.btn-1, .btn-2 {
+    position: relative;
+    cursor: pointer;
+    width: 400px;
+    margin: 150px;
+    height: 300px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 5px #6e45e2;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #ffffff;
+
+}
+
+.btn-1 a, .btn-2 a {
+    display: block;
+    width: 100%; /* El enlace ocupa todo el espacio del botón */
+    height: 100%; /* El enlace ocupa todo el espacio del botón */
+}
+
+.btn-1 img, .btn-2 img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del enlace */
+    height: 100%; /* La imagen ocupa el 100% del alto del enlace */
+}
+
+.btn-1:hover, .btn-2:hover {
+    border: 3px solid #88d3ce;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #88d3ce;
+}
+
+.btn-1:active, .btn-2:active {
+    box-shadow: 4px 4px 12px #6e45e2, -4px -4px 12px #6e45e2;
+}

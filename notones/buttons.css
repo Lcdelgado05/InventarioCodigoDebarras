@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+}
+
+.container{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;    
+}
+
+.btn{
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    position: relative;
+    margin: 32px;
+}
+
+/*btn Uno*/
+
+.btn-1{
+    background: #88d3ce;
+    color: #ffffff;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+
+.btn-1::after, .btn-1::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #6e45e2;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    
+}
+
+.btn-1:hover{
+    transform: translate(-12px, -12px);
+}
+
+.btn-1:hover::after{
+    transform: translate(6px, 6px);
+}
+
+.btn-1:hover::before{
+    transform: translate(12px, 12px);
+}
+
+
+/*btn Dos*/
+
+.btn-2{
+    color: #6e45e2;
+}
+
+.btn-2::after, .btn-2::before{
+    border: 3px solid #88d3ce;
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.btn-2:hover::after{
+    transform: translate(-5px, -5px);
+}
+
+.btn-2:hover::before{
+    transform: translate(5px, 5px);
+}
+
+/*btn Tres*/
+
+.btn-3{
+    color: white;
+    border-radius: 40px;    
+    box-shadow: 0 0 0 0 #6e45e2, 0 0 0 0 #88d3ce;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    overflow: hidden;
+}
+
+.btn-3::after{
+    content: "";
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background: #13ff13;
+    background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+    z-index: -1;
+    transition: transform 0.5s ease;
+}
+
+.btn-3:hover{
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 #88d3ce , -10px 10px 25px 0 #6e45e2;
+}
+
+.btn-3:hover::after{
+    transform: rotate(150deg);
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    min-height: 10vh;
+}
+
+.footer a{
+    font-size: 3rem;
+    text-decoration: none;
+    color: red;
+    margin-right: 2rem;
+}
+
+.footer p{
+    font-size: 2.5rem;
+    color: white;
+}

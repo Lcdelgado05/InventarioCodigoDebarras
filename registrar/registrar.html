@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inventario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="registrar.css">
+    <title>Registro de Usuarios</title>
+</head>
+<body>
+    <div class="container">
+        <form id="registrationForm" class="registration-form">
+            <h2>Registro de Usuarios</h2>
+
+            <label for="correo">
+                <input placeholder="Correo" id="correo" name="correo" required>
+            </label>
+
+            <label for="contrasena">
+                <input placeholder="Contraseña" id="contrasena" name="contrasena" type="password" required>
+            </label>
+
+            <label for="nombre">
+                <input placeholder="Nombre" type="text" id="nombre" name="nombre" required>
+            </label>
+
+            <label for="numeroContacto">
+                <input placeholder="Celular" type="tel" id="numeroContacto" name="numeroContacto" required>
+            </label>
+            
+            <label for="rol">Rol:</label>
+            <select id="rol" name="rol" required>
+                <option value="usuario">Usuario</option>
+                <option value="administrador">Administrador</option>
+            </select>
+
+            <div class="buttons">
+                <button type="submit" class="btn btn-1">Registrar</button>
+            </div>
+        </form>
+    </div>
+    <script type="module" src="registro.js"></script>
+</body>
+</html>

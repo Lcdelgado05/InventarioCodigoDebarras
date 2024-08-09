@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6e45e2, #88d3ce);
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px #6e45e2;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"],
+input[type="tel"] {
+    width: 73%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    position: relative;
+    margin: 32px;
+}
+
+.btn-1 {
+    background: linear-gradient(to right, #6e45e2, #88d3ce);
+    color: #ffffff;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-1::after,
+.btn-1::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #6e45e2;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.btn-1:hover {
+    transform: translate(-12px, -12px);
+}
+
+.btn-1:hover::after {
+    transform: translate(6px, 6px);
+}
+
+.btn-1:hover::before {
+    transform: translate(12px, 12px);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+ 
+
+form label {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+form label .fa-solid {
+    font-size: 20px;
+    color: #000000;
+    margin-right: 10px;
+}
+
+form label input{
+    outline: none;
+    border: none;
+    color: #000000;
+    border-bottom: solid 1px #6e45e2;
+    padding: 0 5px;
+    font-size: 20px;
+    
+}
+
+ form label input::placeholder {
+    color: #000000 ;
+
+}
+
